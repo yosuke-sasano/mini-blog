@@ -1,0 +1,20 @@
+<h2><%= @name %>’s tweets</h2>
+<div class="contents">
+  <% @tweets.each do |tweet| %>
+    <div class="contents_post">
+      <div class="jump">
+        <%= link_to 'Back to Top', "/tweets/", method: :get %>
+      </div>
+      <div class="tweet_text">
+        <%= simple_format(tweet.text) %>
+      </div>
+      <div class="name">
+        <%= tweet.name %>
+      </div>
+      <div class="updated_at">
+        <%= tweet.updated_at %>
+      </div>
+    </div>
+  <% end %>
+  <h2><%= paginate(@tweets) %></h2>
+</div>

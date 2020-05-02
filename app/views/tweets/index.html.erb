@@ -1,0 +1,29 @@
+<h2>All Tweets</h2>   
+<div class="contents">
+  <% @tweets.each do |tweet| %>
+    <div class="contents_post">
+      <div class="detail">
+        <%= link_to 'Detail', "/tweets/#{tweet.id}", method: :get %>
+      </div>
+      <% if user_signed_in? && current_user.id == tweet.user_id %>
+        <div class="edit">
+          <%= link_to 'Edit Tweet', "/tweets/#{tweet.id}/edit", method: :get %>
+        </div>
+        <div class="delete">
+          <%= link_to 'Delete Tweet', "/tweets/#{tweet.id}", method: :delete %>
+        </div>
+      <% end %>
+        <div class="tweet_text">
+          <%= simple_format(tweet.text) %>
+        </div>
+        <div class="name">
+          <%= tweet.name %>
+        </div>
+        <div class="updated_at">
+          <%= tweet.updated_at %>
+        </div>
+    </div>
+  <% end %>
+</div>
+
+<h2><%= paginate(@tweets) %></h2>

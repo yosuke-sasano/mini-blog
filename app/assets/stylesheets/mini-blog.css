@@ -1,0 +1,270 @@
+
+
+body{
+  height: 100vh;
+  font-family: arial;
+  background-image: url("himawari.jpg");
+  /*background-position:center center;*/
+  /*background-repeat: no-repeat;*/
+  
+}
+
+.header{
+  height: 14vh;
+  line-height: 50px;
+  background-color: #F3FFD8;
+  position: relative;
+  opacity: 0.8;
+  /*margin-bottom: 0;*/
+}
+
+.blog{
+  color: black;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+h2 {
+  margin-left: 20px;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}  
+
+.contents{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.contents_post{
+  position:relative;
+  display: block;
+  min-height: 100px;
+  max-height: auto !important;
+  line-height: 2.5;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  margin-bottom: 70px;
+  background-color: #EEFFFF;
+  word-break: break-all;
+  opacity: 0.8;
+}
+  
+.contents_post_box{
+  position:relative;
+  display: block;
+  min-height: 100px;
+  max-height: auto !important;
+  line-height: 2.5;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  background-color: #EEFFFF;
+  word-break: break-all;
+  opacity: 0.8;
+}  
+  
+.name{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}  
+
+.updated_at{
+  color: black;
+  font-size: 4px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+}
+
+.tweet_text{
+  padding: 10px;
+  line-height: 1;
+}
+
+.tweet{
+  height: 50vh;
+  margin: 20px;
+}
+
+.tweet input[type=text], .tweet textarea {
+  display: block;
+  width: 70%;
+  margin-bottom: 25px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid;
+}
+
+.tweet textarea {
+  height: 200px;
+}
+
+.tweet input[type=submit] {
+  display: block;
+  width: 200px;
+  margin-top: 40px;
+  padding: 15px;
+  border: 1px solid ;
+  background-color: lightblue;
+  color: red;
+  cursor: pointer;
+}
+
+.tweet input[type=reset] {
+  display: block;
+  width: 200px;
+  margin-top: 25px;
+  padding: 10px;
+  border: 1px solid ;
+  background-color: #CCFFFF;
+  color: black;
+  cursor: pointer;
+}
+
+
+.tweet input[type=submit]:hover {
+  background-color: lightgray;
+}
+
+.tweet input[type=reset]:hover {
+  background-color: lightgray;
+}
+
+.edit_cancel{
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 25px;
+  margin-top: 50px;
+  color: red;
+}
+
+.edit_cancel:hover{
+  color: lightgray;
+}
+
+.completed{
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.back {
+  color: blue;
+}
+
+.start {
+  float: right;
+  text-align: right;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+
+.login_user{
+  position: absolute;
+  top: 50px;
+  left: 22px;
+  color: purple;
+  
+}
+
+.user :hover{
+  color: lightgray;
+}
+
+.posts :hover{
+  color: lightgray;
+}
+
+
+.post{
+  font-size: 15px;
+  color: red;
+  padding:0 40px;
+}
+
+.field{
+  height: 70px;
+  font-weight: bold;
+  color: red;
+}
+
+.detail{
+  display: inline-block;
+  width: 80px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  margin: 0 5px;
+  right: 0px;
+  top: 5px;
+}
+
+.delete{
+  display: inline-block;
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  margin: 0 12px;
+  right: 85px;
+  top: 5px;
+}
+
+.edit{
+  display: inline-block;
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  margin: 0 12px;
+  right: 180px;
+  top: 5px;
+}
+
+.jump{
+  display: inline-block;
+  width: 90px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  margin: 0 5px;
+  right: 0px;
+  top: 5px;
+}
+
+.jump :hover{
+  color: gray;
+}
+
+.delete :hover{
+  color: gray;
+}
+
+.edit :hover{
+  color: gray;
+}
+
+.detail :hover{
+  color: gray;
+}
+
+
+/*.footer{*/
+/*  height: 40px;*/
+/*  line-height: 40px;*/
+/*  text-align: center;*/
+/*  background-color: #FF9966;*/
+/*}*/

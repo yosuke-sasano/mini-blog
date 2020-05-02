@@ -1,0 +1,9 @@
+<h2>Edit Tweets</h2>
+<a class="edit_cancel" href="/">Back to top</a>
+<div class="tweet">
+  <%= form_tag("/tweets/#{@tweet.id}", method: :patch) do %>
+    <textarea name="text" placeholder="Please update your comment here." ></textarea>
+    <input type="reset" value="clear">
+    <input type="submit" value="SEND">
+  <% end %>
+</div>

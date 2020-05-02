@@ -1,0 +1,10 @@
+<h2>Make New Tweet</h2>
+<a class="edit_cancel" href="/">Back to top</a>
+<div class="tweet">
+  <%= form_tag('/tweets', method: :post) do %>
+    <input type="text" name="name" placeholder="Name" value="<%= current_user.name %>"readonly>
+    <textarea name="text" placeholder="You can edit only this field. Please input your comment here."></textarea>
+    <input type="reset" value="clear">
+    <input type="submit" value="SEND">
+  <% end %>
+</div>
